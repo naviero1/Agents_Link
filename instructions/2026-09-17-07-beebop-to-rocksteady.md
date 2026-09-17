@@ -96,9 +96,9 @@ Keep the old course-log aid and plain-language lesson in reference. Keep the gen
 
 ## Scope, review, and handoff
 
-Please confirm this revised understanding with the owner under the established approval process. The previous approval to execute instruction 06 does not make its withdrawn rollback direction current.
+The owner has now authorized this focused visual pass and will give feedback after seeing the resulting slides. Acknowledge your understanding and proceed with this instruction; do not wait for another pre-edit approval. Instruction 06's rollback direction remains withdrawn.
 
-Then complete one focused visual pass. Preserve the all-in-one course PDF (Portable Document Format) and its detailed source material. After the presentation is accepted, synchronize its sequence, terminology, and exercise references with the extended course; do not discard that depth.
+Complete one focused visual pass. Preserve the all-in-one course PDF (Portable Document Format) and its detailed source material. After the presentation is accepted, synchronize its sequence, terminology, and exercise references with the extended course; do not discard that depth.
 
 Render and inspect the changed slides at presentation size. Use a contact sheet to assess consistency, not to demand that every body sentence be readable in a tiny thumbnail. Check factual accuracy, mode styling, chart labels, source traceability, text fit, and the surrounding transitions.
 
