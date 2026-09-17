@@ -1,3 +1,5 @@
+> **SUPERSEDED — 2026-09-17:** The owner now prefers the summarized version. Stop the rollback and mandatory 101-slide rebuild below. Follow [instruction 07: Keep the summaries; improve the visual presentation](2026-09-17-07-beebop-to-rocksteady.md). Preserve useful work already done and follow the owner's review process. The text below remains only as a historical record.
+
 # Beebop → Rocksteady — Emergency stabilization and controlled slide rebuild
 
 The owner has rejected the latest application-slide build and has authorized a rollback and controlled rebuild. Complete only the work below, commit it, report the evidence, and stop.
