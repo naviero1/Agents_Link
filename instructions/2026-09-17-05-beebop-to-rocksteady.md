@@ -23,16 +23,19 @@ Obtain Oscar’s explicit approval. Then complete one implementation pass, repor
 
 ## Instructional decision
 
-The live sequence should feel simple:
+The following order is a non-negotiable acceptance criterion. Preserve it in the live deck, speaker notes, workbook, prompt creator, course PDF, and prepared outputs:
 
-1. Upload one data file.
-2. Inspect it.
-3. Answer one business question and show the math.
-4. Explore one pattern.
-5. Build and test an interactive dashboard from the same data.
-6. Turn the verified findings into a management presentation mock-up.
-7. Organize an Outlook email thread.
-8. Optionally demonstrate plain-language writing.
+1. **Excel data analysis:** upload one data-only Excel workbook, inspect it, cleanly define the scope, and calculate the requested measures.
+2. **Questions:** ask business follow-up questions of the same data and distinguish findings from unsupported causal explanations.
+3. **Excel graphs and returned file:** add editable native Excel charts and a summary sheet, then return the edited workbook as Supplier_Data_Analyzed.xlsx.
+4. **HTML dashboard:** feed Supplier_Data_Analyzed.xlsx into the HyperText Markup Language (HTML) dashboard workflow. Use the same verified data, definitions, and calculations.
+5. **Presentation:** turn the verified analysis and dashboard findings into the five-slide management mock-up.
+6. **Email summary prompt exercise:** organize and summarize the supplied Outlook thread.
+7. **Quotation workflow, step one:** extract the supplied quotation PDF fields into Excel.
+8. **Quotation workflow, step two:** normalize and compare the extracted quotations in Excel.
+9. **Research:** finish with the advanced references-and-PDFs-to-research-workbook exercise.
+
+The optional fifth-grade reading-level exercise remains in the reference layer. It must not interrupt this sequence.
 
 The training determines the examples. The examples determine the reusable prompts. The prompts determine the tool. Do not let the current builder or workbook structure dictate the training.
 
@@ -48,9 +51,9 @@ Merge the current **Putting Prompts to Work** divider and **One question, one im
 
 **Title:** Data Analytics Exercise
 
-**Subtitle:** One file. Two prompts. One checked answer.
+**Subtitle:** One workbook. Questions. Charts. A returned file.
 
-**Supporting line:** Use the same verified data for the dashboard and presentation mock-up.
+**Supporting line:** Analyze the data in Excel, return the workbook with editable charts, then reuse it for the dashboard and presentation mock-up.
 
 Do not keep the basic-prompt-versus-improved-prompt lecture as a separate slide. Preserve its useful idea in the speaker notes: each added instruction should resolve a specific ambiguity.
 
@@ -102,7 +105,30 @@ Use the vacated position for a direct continuation:
 
 “Using the same data, compare return rate by month and site. Identify the clearest increase, decrease, or unusual pattern. Show the values behind it. Do not claim a cause. List the additional data needed to investigate why it happened.”
 
-### 5. Make dashboard requirements specific
+### 5. Add Excel graphs and return the edited workbook
+
+This step must occur before the HTML dashboard.
+
+**Title:** Add the Charts and Return the Excel File
+
+**Prompt:**
+
+“Using the verified calculations, update the uploaded workbook and return an editable Excel file named Supplier_Data_Analyzed.xlsx.
+
+Add a Summary sheet with:
+
+- A supplier comparison table showing units shipped, units returned, return rate, and defect rate.
+- An editable native Excel column chart comparing supplier return rates.
+- An editable native Excel line chart showing return rate by month.
+- The reporting period, metric definitions, and one short limitations note.
+
+Keep the original data unchanged. Use formulas, PivotTables, or other traceable Excel logic rather than hard-coded chart values. Preserve missing values as missing. Check that the summary totals reconcile to the source data before returning the file.”
+
+Show participants that the assistant has returned an actual workbook. Open it, inspect the Summary sheet, click one chart, and confirm that its source range or PivotTable is editable.
+
+Prepared fallback: Supplier_Data_Analyzed.xlsx, independently checked against the source and answer key.
+
+### 6. Make dashboard requirements specific
 
 Replace the generic **A deliverable needs artifact requirements** wording with a direct setup for the dashboard.
 
@@ -110,7 +136,7 @@ Replace the generic **A deliverable needs artifact requirements** wording with a
 
 **Prompt:**
 
-“Using the same data and verified definitions, create one self-contained HyperText Markup Language (HTML) dashboard that works offline. Include a date-range selector, supplier and site filters, a metric selector, summary values, a trend chart, a sortable detail table, and a reset control. Every filter must update every view. Show the selected period and metric definitions. Display a clear message when no rows match.”
+“Using the returned Supplier_Data_Analyzed.xlsx workbook and its verified definitions, create one self-contained HyperText Markup Language (HTML) dashboard that works offline. Include a date-range selector, supplier and site filters, a metric selector, summary values, a trend chart, a sortable detail table, and a reset control. Every filter must update every view. Show the selected period and metric definitions. Display a clear message when no rows match.”
 
 Add one short teaching line:
 
@@ -118,13 +144,13 @@ Add one short teaching line:
 
 Keep extended dashboard vocabulary in Course_Workbook.xlsx and the reference layer, not on the live slide.
 
-### 6. Continue directly into the dashboard
+### 7. Continue directly into the dashboard
 
 Rename **Demonstration: a dashboard you can check**:
 
 **Title:** Build and Test the Dashboard
 
-Use the same Supplier_Data_Exercise.xlsx data and definitions.
+Use Supplier_Data_Analyzed.xlsx as the dashboard input. Preserve the same source data, definitions, formulas, and reporting period.
 
 Show three actions only:
 
@@ -134,7 +160,7 @@ Show three actions only:
 
 End by asking participants for one refinement using the learned vocabulary, such as a different date range, grouping, metric, drill-down, sort, or reset behavior.
 
-### 7. Keep the presentation mock-up and explain why it differs
+### 8. Keep the presentation mock-up and explain why it differs
 
 Do not delete **Self-study demonstration: present the findings**. It is not redundant.
 
@@ -158,7 +184,7 @@ Use one main message per slide, readable charts, concise visible text, and speak
 
 Treat this as the final step of the connected data exercise, not as an unrelated self-study checklist. Retain the prepared mock presentation as the fallback output.
 
-### 8. Simplify the Outlook section
+### 9. Simplify the Outlook section
 
 Rename **An email summary has a job to do**:
 
@@ -190,7 +216,7 @@ Use this exact structured prompt:
 
 Keep the existing fictional thread. Move its success check to the notes or instructor key so the exercise slide does not reveal the answer.
 
-### 9. Keep the plain-language skill, but reduce it
+### 10. Keep the plain-language skill, but reduce it
 
 **Demonstration: explain it clearly** is not conceptually redundant because it teaches audience, readability, and fidelity requirements. Its current form is overbuilt for the live sequence.
 
@@ -204,13 +230,54 @@ Keep it as an optional short transfer exercise or a reference slide.
 
 Use supplier quality for the live example. Retain household budgeting and the water cycle as practice variants.
 
-## Add two document-to-spreadsheet examples
+## Document-to-spreadsheet examples
 
-Place these after the core exercises as an **Advanced: Documents to Spreadsheets** extension. They must not interrupt the connected data exercise.
+Place these after the Outlook exercise and before the research exercise. They must not interrupt the connected Excel-to-dashboard-to-presentation sequence.
 
-### 10. Research Organizer: References to Spreadsheet
+### 11. Quotation workflow, step one: extract the source values
 
-Add one concise slide, workbook exercise, prepared example, and prompt-creator starter.
+Reuse:
+
+- Quote_Alpha_Components.pdf
+- Quote_Bravo_Plastics.pdf
+- Quote_Cardinal_Metals.pdf
+- The existing EX-Quotes material and checked answers.
+
+Add one concise slide, workbook exercise, prepared workbook, and prompt-creator starter.
+
+**Title:** Extract Supplier Quotes into Excel
+
+**Prompt:**
+
+“Review the attached supplier quotation files and create an editable Excel workbook.
+
+Create a Raw Extraction sheet with one row per quotation and these fields: supplier, quoted scope, currency, quoted quantity, unit price, tooling or other one-time charges, freight, taxes, lead time, payment terms, quote validity, exclusions, source file, source page, and missing information.
+
+Copy values exactly as stated. Keep currencies, quantities, and units in their original form. Write ‘Not stated’ when a field is absent. Do not normalize, rank, or recommend yet. Cite the source file and page for every extracted commercial value.”
+
+The purpose of this first step is faithful extraction and traceability.
+
+### 12. Quotation workflow, step two: normalize and compare
+
+Continue from the returned extraction workbook.
+
+**Title:** Normalize and Compare the Supplier Quotes
+
+**Prompt:**
+
+“Using the Raw Extraction sheet, create a Normalized Comparison sheet.
+
+Normalize quantities, units, or currencies only when the conversion rule or basis is supplied. Keep every original extracted value visible. Flag differences in scope, assumptions, exclusions, and commercial terms. Show formulas for comparable totals.
+
+Do not identify a best quote until the comparison basis is complete. List the missing information and unresolved questions that prevent a fair recommendation.”
+
+Verify every extracted value against the source PDF files and every calculated total against the answer key. Deliver a prepared Quote_Comparison_Workbook.xlsx fallback.
+
+These are the two quotation steps Oscar requested. They follow the email exercise and precede research.
+
+### 13. Research Organizer: references to spreadsheet
+
+Add one concise slide, workbook exercise, prepared example, and prompt-creator starter. This is the final exercise in the sequence.
 
 **Title:** Turn Reference Files into a Research Spreadsheet
 
@@ -226,51 +293,27 @@ Create a Sources sheet that indexes every file.
 
 Write ‘Not stated’ when information is missing. Keep conflicting claims separate. Do not invent citations. Add filters, freeze the header row, and wrap long text. Deliver an editable Excel workbook. If the tool cannot create an Excel file, provide separate comma-separated values (CSV) tables.”
 
-This is the advanced research prompt Oscar requested. The point is to convert unstructured references or PDF files into linear, traceable knowledge without losing provenance.
+The point is to convert unstructured references or PDF files into linear, traceable knowledge without losing provenance.
 
 Use a small supplied fictional reference pack so the exercise can be verified. Provide an answer key covering source traceability, missing fields, contradictions, and logical ordering.
-
-### 11. Supplier Quotes to Comparison Spreadsheet
-
-Reuse:
-
-- Quote_Alpha_Components.pdf
-- Quote_Bravo_Plastics.pdf
-- Quote_Cardinal_Metals.pdf
-- The existing EX-Quotes material and checked answers.
-
-Add one concise slide, workbook exercise, prepared workbook, and prompt-creator starter.
-
-**Title:** Turn Supplier Quotes into a Comparison Workbook
-
-**Prompt:**
-
-“Review the attached supplier quotation files and create an editable comparison workbook.
-
-Create a Raw Extraction sheet with one row per quotation and these fields: supplier, quoted scope, currency, quoted quantity, unit price, tooling or other one-time charges, freight, taxes, lead time, payment terms, quote validity, exclusions, source file, source page, and missing information.
-
-Create a Normalized Comparison sheet. Normalize quantities, units, or currencies only when the conversion rule or basis is supplied. Keep the original extracted values visible. Mark missing fields as ‘Not stated.’ Flag differences in commercial scope and terms. Show formulas for comparable totals.
-
-Do not identify a best quote until the comparison basis is complete. List the unresolved questions that prevent a fair recommendation.”
-
-Verify every extracted value against the source PDF and every calculated total against the answer key.
 
 ## Companion artifacts
 
 Update the complete package so terminology and prompts agree:
 
 - Facilitated PowerPoint deck and speaker notes.
-- Course_Workbook.xlsx, including the core exercise tabs and two new advanced tabs.
+- Course_Workbook.xlsx, including the core exercise tabs, Excel-chart instructions, two quotation tabs, and the research tab.
 - Supplier_Data_Exercise.xlsx, data only.
-- Prompt_Template_Creator.html. Keep the five primary workflow cards simple; add **Research Spreadsheet** and **Quote Comparison Workbook** under an Advanced or More Examples group.
+- Supplier_Data_Analyzed.xlsx, the prepared returned workbook with editable native Excel charts and traceable calculations.
+- Prompt_Template_Creator.html. Keep the primary workflow cards simple; add **Excel Analysis and Charts**, **Quote Extraction**, **Quote Comparison**, and **Research Spreadsheet** in the same order used by the training.
 - Spreadsheet configurator if it remains part of the package.
 - Extended course PDF.
 - Facilitation plan.
 - Requirements-by-artifact reference.
 - Prepared dashboard and management mock presentation.
 - Fictional email thread and answer key.
+- Quote extraction and comparison prepared workbook and answer key.
 - New research-reference input pack, prepared workbook, and answer key.
-- Quote comparison prepared workbook and answer key.
 - README, DELIVERABLES, REFERENCES, PROJECT_STATE, and change log as applicable.
 
 Do not force the new advanced examples onto the one-page cheat sheet if doing so makes it denser.
@@ -289,13 +332,18 @@ After Oscar approves and the pass is implemented:
 1. Render every changed slide and inspect it at presentation size.
 2. Keep visible body text at least 17 points.
 3. Check that exercise answers do not appear on participant prompt slides.
-4. Confirm the live data exercise needs only Supplier_Data_Exercise.xlsx.
-5. Confirm the dashboard and presentation use the same verified dataset and definitions.
-6. Confirm the Outlook exercise has a supplied-text fallback.
-7. Verify the research workbook against every supplied source.
-8. Verify quote extraction and formulas against the quotation PDFs and answer key.
-9. Run presentation overflow checks and spreadsheet recalculation checks.
-10. Report the resulting private commit, changes by item, rendered evidence, test results, and unresolved issues.
-11. Stop for Beebop review and Oscar’s final word.
+4. Confirm the live data exercise begins with only Supplier_Data_Exercise.xlsx.
+5. Confirm the assistant returns Supplier_Data_Analyzed.xlsx with an editable Summary sheet and native Excel charts.
+6. Confirm the HTML dashboard reads the returned analyzed workbook and preserves its verified definitions and values.
+7. Confirm the presentation uses the same verified findings.
+8. Confirm the Outlook exercise follows the presentation and has a supplied-text fallback.
+9. Confirm quote extraction follows email, quote comparison follows extraction, and research comes last.
+10. Verify quote extraction and formulas against the quotation PDF files and answer key.
+11. Verify the research workbook against every supplied source.
+12. Run presentation overflow checks and spreadsheet recalculation checks.
+13. Report the resulting private commit, changes by item, rendered evidence, test results, and unresolved issues.
+14. Stop for Beebop review and Oscar’s final word.
+
+Reject the build if the slide order deviates from the required sequence.
 
 Keep private course files and detailed course data out of this public repository.
