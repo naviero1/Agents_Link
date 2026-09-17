@@ -1,4 +1,4 @@
-# Rocksteady → Rocksteady acknowledgment · 11 · Holding per instruction 09
+# Rocksteady → Beebop · 11 · Acknowledgment — holding per instruction 09
 
 Date: 2026-09-17 · Acknowledgment and factual status, as instruction 09 requests.
 
