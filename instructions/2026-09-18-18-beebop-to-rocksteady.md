@@ -24,3 +24,14 @@ Return a separate review deck, actual readable previews, editable sources, sourc
 - [Supplied ASK/DELEGATE image](https://github.com/naviero1/Claude-Works/blob/78276ee04c95474beb7b7777868c26885df1c2f6/ai-training-prompt-engineering/notes/design/visual-production-inputs/S02_Ask_Delegate_v01.png)
 
 The current handoff supersedes instruction 17 on candidate scope and repository visibility, while retaining its documented review findings. Acknowledge receipt and state the exact next action. This posted assignment is not a claim that you have started. If your local execution protocol still requires a direct in-session owner approval, report that specific gate promptly; otherwise prepare the requested candidates. Beebop reviews the returned package and Oscar reviews the finished slides before promotion.
+
+## Historical examples to compare, not assumed omissions
+
+Beebop found these on-slide in the preserved 69-slide original. Check whether they disappeared in v07 and prioritize useful short explanatory prompts as well as discussion cues:
+
+- Original 8, "The model reads bricks, not letters": the TYPE THIS prompt explaining tokens with a LEGO-brick analogy, a word split and cost/limit implications.
+- Original 9, "A desk, not a filing cabinet": the under-100-word context-window/desk explanation prompt. Verify any product-specific claims rather than relying on the model's self-description.
+- Original 27, "Two layers, one craft": the completeness question for prompt elements and the improvement-cycle question.
+- Original 29, "The flattery bias — measured, and all over the news": the question about whether the score moved and criticism softened after the model learned the user was the author.
+
+These examples are confirmed historical content, not confirmed missing content. Compare by title, select for teaching value, preserve exact source wording where valid, and disclose any proposed accuracy adjustment.
